@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(231, 241, 231);
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+header h1 {
+    color: deepskyblue;
+}
+
+#name h2 {
+    color: purple;
+}
+
+#hometown h2{
+    color: rgb(26, 245, 2);
+}
+
+#favBand h2{
+    color: rgb(57, 29, 218);
+}
+
+#vacation h2{
+    color: indianred;
+}
+
