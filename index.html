@@ -1,30 +1,32 @@
 <!DOCTYPE = html>
-<html>
+<html lang="en">
     <head>
         <title>About Me</title>
+        <link rel="stylesheet" href="main.css">
     </head>
     <body>
-        <h1>About Me</h1>
-        <p>What is your name?</p>
-        <p>Where were you born?</p>
-        <p>Who is your favorite band?</p>
-        <p>Where do you want to take your next vacation?</p>
-        <script>
-            const userName = prompt('What is your name?');
-            console.log('Username = ' + userName);
-            alert('Nice to meet you ' + userName + "!");
-
-            const hometown = prompt('Where were you born?');
-            console.log('Hometown = ' + hometown);
-            alert('Hi ' + userName + '! Thanks for coming all the way from ' + hometown + '!');
-
-            const favBand = prompt('What is your favorite band?');
-            console.log('Favorite band = ' + favBand);
-            alert('Awesome ' + userName + '! You are the first person ever to listen to ' + favBand + ' while being from ' + hometown + '!');
-            
-            const vacation = prompt('Where do you want to take your next vacation?');
-            console.log('Next vacation = ' + vacation);
-            alert('Thanks ' + userName + '! I hope you get to ' + vacation + ' while listening to ' + favBand + '. I will be visiting ' + hometown + ' based off your recommendation!');
-        </script>
+        <header>
+                <h1>About Me</h1>
+        </header>
+        <section>
+            <article id="name">
+                <h2>What is your name?</h2>
+                <p>Ryan Manro</p>
+            </article>
+            <article id="hometown">
+                <h2>Where were you born?</h2>
+                <p>Orange, California</p>
+            </article>
+            <article id="favBand">
+                <h2>Who is your favorite band?</h2>
+                <p>Preoccupations (at least for this week)</p>
+            </article>
+            <article id="vacation">
+                <h2>Where do you want to take your next vacation?</h2>
+                <p>Copenhagen, Denmark</p>
+            </article>
+        </section>
+        <!-- questions script -->
+        <script src="app.js"></script> 
     </body>
 </html>
