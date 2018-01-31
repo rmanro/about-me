@@ -79,6 +79,19 @@ for (let i = 0; i < 4; i++){
     }
 }
 
+// Question 7 (answers stored in an array, 6 guesses)
+
+const techsupport = ['dell', 'adobe', 'shopkeep'];
+for (let i = 0; i < 6; i++){
+    const techAns = prompt('Can you guess a company I\'ve done tech support for?').toLowerCase();
+    if (techsupport.indexOf(techAns) === -1){
+        alert('That\'s incorrect. Please guess again.');
+    } else {
+        alert('That\'s correct ' + userName + '! I\'ve worked for Dell, Adobe, and ShopKeep.');
+        break;
+    }
+}
+
 // Goodbye message
 
 alert('Thanks for playing ' + userName + '! See ya later!');
