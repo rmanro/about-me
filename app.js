@@ -63,6 +63,22 @@ if (soccer.toLowerCase() === 'yes' || soccer.toLowerCase() === 'y'){
     alert('Sorry ' + userName + ', but I didn\'t understand that answer.');
 }
 
+// Question 6 (four guesses)
+
+for (let i = 0; i < 4; i++){
+    const states = parseInt(prompt('How many states have I lived in?'));
+    if (states === 3){
+        alert('That\'s correct ' + userName + '! I\'ve lived in California, Nevada, and Oregon.');
+        break;
+    } else if (i === 3){
+        alert('That\'s incorrect. You have no more guesses. Sorry!');
+        break;
+    }
+    if (i < 4){
+        alert('That\'s incorrect ' + userName + ', try again.');
+    }
+}
+
 // Goodbye message
 
 alert('Thanks for playing ' + userName + '! See ya later!');
