@@ -98,7 +98,7 @@ for (let i = 0; i < 6; i++){
         if (i < 5){
             alert('That\'s incorrect. Please guess again.');
         } else {
-            alert('Sorry, but you have no more guesses.');
+            alert('Sorry, that\'s incorrect and you have no more guesses.');
             break;
         }
     } else {
