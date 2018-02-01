@@ -84,8 +84,10 @@ for (let i = 0; i < 4; i++){
         alert('That\'s incorrect. You have no more guesses. Sorry!');
         break;
     }
-    if (i < 4){
-        alert('That\'s incorrect ' + userName + ', try again.');
+    if (states < 3){
+        alert('That guess is too low ' + userName + ', try again.');
+    } else if (states > 3){
+        alert('That guess is too high ' + userName + ', try again.');
     }
 }
 
