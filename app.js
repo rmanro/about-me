@@ -20,6 +20,25 @@ function q1 (){
     }
 }
 
+// function question(){
+//  for (let i = 0; i < 5; i++){
+//      const answer = prompt(qString[i]).toLowerCase();
+//      if (answer === 'yes' || answer === 'y') {
+//          answer = 'y';
+//      } else if (answer === 'no' || answer === 'n') {
+//          answer = 'n';
+//        } else {
+//             alert('Sorry ' + userName + ', but I don\'t understand that answer.')
+//           }
+//      if (ynString[i] === answer){
+//          alert('That\'s right ' + userName + correctString[i])
+//          correctGuesses++;
+//      } else if (ynString[i] !== answer) {
+//          alert('That\'s incorrect ' + userName + incorrectString[i]);
+// }
+// }
+// }
+
 // Question 2
 function q2 (){
     const favOlives = prompt('Do I like green olives?').toLowerCase();
