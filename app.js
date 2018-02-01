@@ -109,19 +109,22 @@ for (let i = 0; i < 6; i++){
 }
 //IF THE ABOVE CODE IS CONSIDERED CHEATING BECAUSE I USED .INDEXOF, THE BELOW CODE WILL WORK TOO WITHIN THE FOR LOOP STARTING ON LINE 97. I WROTE THIS AFTERWARDS AT HOME WHEN I REALIZED THAT IT MAY BE CONSIDERED A FUNCTION
 // if (techAns === techsupport[0]){
-//     alert('correct');
+//     alert('That\'s correct ' + userName + '! I\'ve worked for Dell, Adobe, and ShopKeep.');
 //     correctGuesses++;
 //     break;
 // }  else if (techAns === techsupport[1]){
-//     alert('correct');
+//     alert('That\'s correct ' + userName + '! I\'ve worked for Dell, Adobe, and ShopKeep.');
 //     correctGuesses++;
 //     break;
 // } else if (techAns === techsupport[2]){
-//     alert('correct');
+//     alert('That\'s correct ' + userName + '! I\'ve worked for Dell, Adobe, and ShopKeep.');
 //     correctGuesses++;
 //     break;
+// } else if (i === 5){
+//     alert('Sorry, that\'s incorrect and you have no more guesses.');
+//     break;
 // } else {
-//     alert('incorrect');
+//     alert('That\'s incorrect. Please guess again.');
 // }
 
 
