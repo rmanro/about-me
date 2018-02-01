@@ -13,8 +13,9 @@ section{
 
 h1 {
     border-style: solid;
-    border-width: thin;
-    color: deepskyblue;
+    border-width: medium;
+    border-color: #131415;
+    color: #478aa0;
     width: fit-content;
     margin: auto;
     background-color: rgb(237, 234, 234);
