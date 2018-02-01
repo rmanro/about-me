@@ -20,17 +20,6 @@ function q1 (){
     }
 }
 
-// const hometown = prompt('Was I born in Las Vegas?').toLowerCase();
-// console.log(userName + '\'s answer to Question 1 was: ' + hometown);
-// if (hometown === 'no' || hometown === 'n'){
-//     alert('That\'s right ' + userName + ', I was born in Orange, California!');
-//     correctGuesses++;
-// } else if (hometown === 'yes' || hometown === 'y'){
-//     alert('Sorry ' + userName + ', but I was born in Orange, California.');
-// } else{
-//     alert('Sorry ' + userName + ', but I didn\'t understand that answer.');
-// }
-
 // Question 2
 function q2 (){
     const favOlives = prompt('Do I like green olives?').toLowerCase();
@@ -72,6 +61,7 @@ function q4 (){
         alert('Sorry ' + userName + ', but I didn\'t understand that answer.');
     }
 }
+
 // Question 5
 function q5 (){
     const soccer = prompt('Is Soccer my favorite sport?').toLowerCase();
@@ -107,6 +97,7 @@ function q6 (){
         }
     }
 }
+
 // Question 7 (answers stored in an array, 6 guesses)
 function q7 (){
     const techsupport = ['dell', 'adobe', 'shopkeep'];
@@ -126,6 +117,7 @@ function q7 (){
         }
     }
 }
+
 q1();
 q2();
 q3();
@@ -133,28 +125,6 @@ q4();
 q5();
 q6();
 q7();
-
-
-//IF THE ABOVE CODE IS CONSIDERED CHEATING BECAUSE I USED .INDEXOF, THE BELOW CODE WILL WORK TOO WITHIN THE FOR LOOP STARTING ON LINE 97. I WROTE THIS AFTERWARDS AT HOME WHEN I REALIZED THAT IT MAY BE CONSIDERED A FUNCTION
-// if (techAns === techsupport[0]){
-//     alert('That\'s correct ' + userName + '! I\'ve worked for Dell, Adobe, and ShopKeep.');
-//     correctGuesses++;
-//     break;
-// }  else if (techAns === techsupport[1]){
-//     alert('That\'s correct ' + userName + '! I\'ve worked for Dell, Adobe, and ShopKeep.');
-//     correctGuesses++;
-//     break;
-// } else if (techAns === techsupport[2]){
-//     alert('That\'s correct ' + userName + '! I\'ve worked for Dell, Adobe, and ShopKeep.');
-//     correctGuesses++;
-//     break;
-// } else if (i === 5){
-//     alert('Sorry, that\'s incorrect and you have no more guesses.');
-//     break;
-// } else {
-//     alert('That\'s incorrect. Please guess again.');
-// }
-
 
 // Goodbye message
 
