@@ -5,7 +5,6 @@ let correctGuesses = 0; // tracking # of correct guesses
 // Asking for user's name
 const userName = prompt('What is your name?');
 console.log('User\'s Name = ' + userName);
-alert('Nice to meet you ' + userName + '! My name is Ryan. We will now play a game where I ask you five Yes/No questions about myself. Good luck!');
 
 //Arrays for questions 1-5:
 const qString = ['Was I born in Las Vegas?','Do I like green olives?','Do I have any tattoos?','Is Civilization my favorite computer game?','Is Soccer my favorite sport?'];
@@ -15,6 +14,7 @@ const incorrectString = [', I was born in Orange, California', ', but I only lik
 
 // function for Questions 1-5
 function ynQuestions(){
+    alert('Nice to meet you ' + userName + '! My name is Ryan. We will now play a game where I ask you five Yes/No questions about myself. Good luck!');
     for (let i = 0; i < 5; i++){
         let answer = prompt(qString[i]).toLowerCase();
         let gibberish = false;
