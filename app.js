@@ -5,97 +5,31 @@ let correctGuesses = 0; // tracking # of correct guesses
 // Asking for user's name
 const userName = prompt('What is your name?');
 console.log('User\'s Name = ' + userName);
-alert('Nice to meet you ' + userName + '! My name is Ryan. We will now play a game where I ask you five questions about myself. You can answer with \'yes\' or \'no\'. Good luck!');
+alert('Nice to meet you ' + userName + '! My name is Ryan. We will now play a game where I ask you five questions about myself. You can answer with \'yes\', \'y\',  \'no\', or \'n\'. Good luck!');
 
-// Question 1
-function q1 (){
-    const answer = prompt('Was I born in Las Vegas?').toLowerCase();
-    if (answer === 'no' || answer === 'n'){
-        alert('That\'s right ' + userName + ', I was born in Orange, California!');
-        correctGuesses++;
-    } else if (answer === 'yes' || answer === 'y'){
-        alert('Sorry ' + userName + ', but I was born in Orange, California.');
-    } else{
-        alert('Sorry ' + userName + ', but I didn\'t understand that answer.');
+//Arrays for questions 1-5:
+const qString = ['Was I born in Las Vegas?','Do I like green olives?','Do I have any tattoos?','Is Civilization my favorite computer game?','Is Soccer my favorite sport?'];
+const ynString = ['n','n','y','y','y'];
+const correctString = [', I was born in Orange, California.', ', I only like black olives.', ', I have one tattoo on my arm.', ', I\'ve been playing it since I was a kid!', ', that is my favorite sport!' ];
+const incorrectString = [', I was born in Orange, California', ', but I only like black olives.', ', but I do have a tattoo on my arm.', ', Civilization is definitely my favorite game.', ', soccer is definitely my favorite sport.'];
+
+// function for Questions 1-5
+function ynQuestions(){
+    for (let i = 0; i < 5; i++){
+        let answer = prompt(qString[i]).toLowerCase();
+        if (answer === 'yes' || answer === 'y') {
+            answer = 'y';
+        } else if (answer === 'no' || answer === 'n') {
+            answer = 'n';
+        }
+        if (ynString[i] === answer){
+            alert('That\'s right ' + userName + correctString[i]);
+            correctGuesses++;
+        } else {
+            alert('That\'s incorrect ' + userName + incorrectString[i]);
+        }
     }
 }
-
-// function question(){
-//  for (let i = 0; i < 5; i++){
-//      const answer = prompt(qString[i]).toLowerCase();
-//      if (answer === 'yes' || answer === 'y') {
-//          answer = 'y';
-//      } else if (answer === 'no' || answer === 'n') {
-//          answer = 'n';
-//        } else {
-//             alert('Sorry ' + userName + ', but I don\'t understand that answer.')
-//           }
-//      if (ynString[i] === answer){
-//          alert('That\'s right ' + userName + correctString[i])
-//          correctGuesses++;
-//      } else if (ynString[i] !== answer) {
-//          alert('That\'s incorrect ' + userName + incorrectString[i]);
-// }
-// }
-// }
-
-// Question 2
-function q2 (){
-    const favOlives = prompt('Do I like green olives?').toLowerCase();
-    console.log(userName + '\'s answer to Question 2 was: ' + favOlives);
-    if (favOlives === 'no' || favOlives === 'n'){
-        alert('That\'s right ' + userName + ', I only like black olives!');
-        correctGuesses++;
-    } else if (favOlives === 'yes' || favOlives === 'y'){
-        alert('Sorry ' + userName + ', but I only like black olives.');
-    } else{
-        alert('Sorry ' + userName + ', but I didn\'t understand that answer.');
-    }
-}
-
-// Question 3
-function q3 (){
-    const tattoo = prompt('Do I have any tattoos?').toLowerCase();
-    console.log(userName + '\'s answer to Question 3 was: ' + tattoo);
-    if (tattoo === 'yes' || tattoo === 'y'){
-        alert('That\'s right ' + userName + ', I have one tattoo on my arm!');
-        correctGuesses++;
-    } else if (tattoo === 'no' || tattoo === 'n'){
-        alert('Sorry ' + userName + ', but I have one tattoo.');
-    } else{
-        alert('Sorry ' + userName + ', but I didn\'t understand that answer.');
-    }
-}
-
-// Question 4
-function q4 (){
-    const civ = prompt('Is Civilization my favorite computer game?').toLowerCase();
-    console.log(userName + '\'s answer to Question 4 was: ' + civ);
-    if (civ === 'yes' || civ === 'y'){
-        alert('That\'s right ' + userName + ', I\'ve been playing it since I was a kid!');
-        correctGuesses++;
-    } else if (civ === 'no' || civ === 'n'){
-        alert('Sorry ' + userName + ', but that is definitely my favorite computer game.');
-    } else{
-        alert('Sorry ' + userName + ', but I didn\'t understand that answer.');
-    }
-}
-
-// Question 5
-function q5 (){
-    const soccer = prompt('Is Soccer my favorite sport?').toLowerCase();
-    console.log(userName + '\'s answer to Question 5 was: ' + soccer);
-    if (soccer === 'yes' || soccer === 'y'){
-        alert('That\'s right ' + userName + ', that is my favorite sport!');
-        correctGuesses++;
-    } else if (soccer === 'no' || soccer === 'n'){
-        alert('Sorry ' + userName + ', but soccer is my favorite sport.');
-    } else{
-        alert('Sorry ' + userName + ', but I didn\'t understand that answer.');
-    }
-}
-
-alert('Now I\'m going to ask you a couple more questions about me. You will have a few tries on each. Good luck!');
 
 // Question 6 (four guesses)
 function q6 (){
@@ -137,14 +71,8 @@ function q7 (){
     }
 }
 
-q1();
-q2();
-q3();
-q4();
-q5();
+ynQuestions();
+alert('Now I\'m going to ask you a couple more questions about me. You will have a few tries on each. Good luck!');
 q6();
 q7();
-
-// Goodbye message
-
 alert('Thanks for playing ' + userName + '! You got ' + correctGuesses + ' out of 7 questions right. See ya later!');
