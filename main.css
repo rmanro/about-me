@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(195, 202, 205);
+    background-color: #a7d7ff;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
 }
@@ -8,17 +8,17 @@ section{
     border-style: solid;
     margin: 9;
     padding: 10;
-    background: #cae0e0;
+    background: #a7d7ff;
 }
 
 h1 {
     border-style: solid;
     border-width: medium;
     border-color: #131415;
-    color: black;
+    color: #0091d2;
     width: fit-content;
     margin: auto;
-    background-color: #cae0e0;
+    background-color: #ffffff;
     padding: 5px;
     font-size: 45px;
 }
@@ -29,8 +29,8 @@ h1 {
 }
 
 #ryan{
-    background-color: rgb(195, 202, 205);
-    color: black;
+    background-color: #ffffff;
+    color: #0091d2;
 }
 h2 {
     color: black;
