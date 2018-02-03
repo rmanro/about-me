@@ -15,16 +15,27 @@ h1 {
     border-style: solid;
     border-width: medium;
     border-color: #131415;
-    color: #478aa0;
+    color: black;
     width: fit-content;
     margin: auto;
-    background-color: rgb(237, 234, 234);
+    background-color: #cae0e0;
     padding: 5px;
     font-size: 45px;
 }
+#name{
+    width: fit-content;
+    border-style: solid;
+    margin: auto;
+}
 
+#ryan{
+    background-color: rgb(195, 202, 205);
+    color: black;
+}
 h2 {
     color: black;
+    margin: auto;
+    padding: 3;
 }
 
 
