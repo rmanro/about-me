@@ -5,14 +5,13 @@ body {
 }
 
 section{
-    border-style: solid;
-    margin: 9;
-    padding: 10;
+    margin: 9px;
+    padding: 10px;
     background: #a7d7ff;
 
 }
 
-h1 {
+#aboutme {
     border-style: solid;
     border-width: medium;
     border-color: #131415;
@@ -20,9 +19,18 @@ h1 {
     width: fit-content;
     margin: auto;
     background-color: #ffffff;
-    padding: 5px;
+    padding: 7px;
     font-size: 45px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 11px #000000;
 }
+
+#line{
+    margin: auto;
+    width: fit-content;
+    font-weight: 500;
+}
+
 article {
     width: fit-content;
     border-style: solid;
@@ -30,14 +38,20 @@ article {
     background-color: #ffffff;
     color: #0091d2;
     border-color: #131415;
-    margin-bottom: 25;
+    margin-bottom: 15px;
     text-align: center;
+    box-shadow: 0px 0px 11px #000000;
+    padding: 2px;
+}
+
+#hometown, #favBand, #vacation{
+    margin-top: 15px;
 }
 
 h2 {
     color: #0091d2;
     margin: auto;
-    padding: 5;
+    padding: 5px;
 }
 
 ul {
@@ -58,13 +72,12 @@ a {
     font-family: 'Nunito', sans-serif;
 }
 
-a:hover{
-    background-color: #000000;
-    font-size: 150%;
-}
-
 a:link{
     color: #0091d2;
+}
+
+a:hover{
+    font-weight: bolder;
 }
 
 a:visited{
